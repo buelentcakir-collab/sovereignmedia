@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
+import Gallery from "./pages/Gallery";
 import InstitutionalMedia from "./pages/InstitutionalMedia";
 import StrategicAdvisory from "./pages/StrategicAdvisory";
 import Insights from "./pages/Insights";
@@ -80,6 +81,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/institutional-media" element={<InstitutionalMedia />} />
           <Route path="/strategic-advisory" element={<StrategicAdvisory />} />
           <Route path="/insights" element={<Insights />} />
